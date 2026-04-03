@@ -8,20 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<audio id="bg-music" loop>
+    <source src="audio/musicBg.mp3" type="audio/mpeg">
+</audio>
 <script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add('show');
-            }
-        });
-    }, {
-        threshold: 0.2
-    });
+    const audio = document.getElementById("bg-music");
 
-    document.querySelectorAll('.fade-in').forEach(el => {
-        observer.observe(el);
-    });
+    function startMusic() {
+        audio.play();
+    }
+
+    document.addEventListener("click", startMusic, { once: true });
+    document.addEventListener("scroll", startMusic, { once: true });
+    document.addEventListener("touchstart", startMusic, { once: true });
 </script>
 <body>
 
@@ -187,6 +186,13 @@
 
 <footer>
     <p>Six years of chaos, now unfolding into a beautiful journey</p>
+    <p class="form-text">We’d love to hear from you 💌</p>
+
+    <a href="https://forms.gle/QUXKWkHYwmwhKMMW7"
+       target="_blank"
+       class="form-btn">
+        ✨ RSVP
+    </a>
 </footer>
 
 </body>
