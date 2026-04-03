@@ -1,0 +1,434 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f3f0ea;
+    color: #6b4c2e;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('images/wedding-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+}
+
+.top-text {
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.names span {
+    font-size: 40px;
+}
+
+.date {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* INVITATION */
+.invitation-section{
+    position:relative;
+    padding:120px 20px;
+    background: url('images/notes.jpg') no-repeat center center/cover;
+    text-align:center;
+}
+
+.invitation-overlay{
+    position:absolute;
+    inset:0;
+    background: rgba(243,240,234,0.4);
+}
+
+.invitation-content{
+    position:relative;
+    max-width:800px;
+    margin:auto;
+    color:#6b4c2e;
+}
+
+.invitation-content h2{
+    font-family:'Great Vibes', cursive;
+    font-size:48px;
+    margin-bottom:30px;
+}
+
+.invitation-content p{
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* COUPLE SECTION */
+.couple-section{
+    display:flex;
+    gap:50px;
+    padding:80px 20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#ece7df;
+}
+
+.couple-box-bride,
+.couple-box-groom{
+    padding:40px 35px;
+    width:320px;
+    text-align:center;
+    border-radius:20px;
+    color:white;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Background images */
+.couple-box-bride{
+    background: url('images/bride.jpg') no-repeat center center/cover;
+}
+
+.couple-box-groom{
+    background: url('images/groom.jpg') no-repeat center center/cover;
+}
+
+/* Overlay for readability */
+.couple-box-bride::before,
+.couple-box-groom::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.couple-box-bride *,
+.couple-box-groom *{
+    position:relative;
+    z-index:2;
+}
+
+.couple-box-bride h2,
+.couple-box-groom h2{
+    font-family:'Great Vibes', cursive;
+    font-size:42px;
+}
+
+.couple-box-bride h3,
+.couple-box-groom h3{
+    font-size:22px;
+}
+
+/* EVENTS BANNER */
+.events-banner {
+    background: #c6a86e;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/* EVENTS GRID */
+.events-grid{
+    display:flex;
+    gap:60px;
+    padding:80px 20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    background: url('images/pexels-jeremy-wong-382920-1082024.jpg') no-repeat center center/cover;
+}
+
+/* Common column */
+.events-column{
+    width:340px;
+    padding:40px 30px;
+    border-radius:25px;
+    position:relative;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(0,0,0,0.08);
+    overflow:hidden;
+}
+
+/* Backgrounds */
+.events-column-bride{
+    background: url('images/bride-bg.jpg') no-repeat center center/cover;
+}
+
+.events-column-groom{
+    background: url('images/groom-bg.jpg') no-repeat center center/cover;
+}
+
+/* Overlay */
+.events-column::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.events-column *{
+    position:relative;
+    z-index:2;
+}
+
+/* Headings */
+.events-column h2{
+    font-family:'Great Vibes', cursive;
+    font-size:38px;
+    margin-bottom:30px;
+    color:#f5e6cc;
+}
+
+/* Events */
+.event{
+    margin-bottom:40px;
+    position:relative;
+}
+
+.event h3{
+    font-family:'Great Vibes', cursive;
+    font-size:28px;
+    color:#ffd700;
+}
+
+.event p{
+    color:#f5e6cc;
+}
+
+/* ✅ WORKING SEPARATOR */
+.events-column .event:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    left:25%;
+    width:50%;
+    height:1px;
+    background:linear-gradient(to right,transparent,#ffd700,transparent);
+}
+
+/* MAIN EVENTS */
+.main-events-banner {
+    background: #c6a86e;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.events {
+    padding: 60px 20px;
+    text-align: center;
+    background: url('images/mainWedding.jpg') no-repeat center center/cover;
+    color:white;
+    position:relative;
+}
+
+.events::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.events *{
+    position:relative;
+    z-index:2;
+}
+
+/* FOOTER */
+footer {
+    background: #6b4c2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .events-grid,
+    .couple-section{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .invitation-content h2{
+        font-size:38px;
+    }
+
+    .invitation-content p{
+        font-size:16px;
+    }
+        .names {
+            font-size: 40px;
+        }
+
+        .date {
+            font-size: 16px;
+        }
+
+        .top-text {
+            font-size: 12px;
+        }
+            .invitation-section,
+            .events,
+            .events-grid,
+            .couple-section {
+                padding: 50px 15px;
+            }
+}
+
+/*Premium Card Hover Effect*/
+.couple-box-bride,
+.couple-box-groom,
+.events-column {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.couple-box-bride:hover,
+.couple-box-groom:hover,
+.events-column:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+/*Smooth Fade + Stagger Animation*/
+/* Base animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.9s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger effect for child elements */
+/* Base animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.9s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger effect for child elements */
+.fade-in .event {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.show .event {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in.show .event:nth-child(1) { transition-delay: 0.2s; }
+.fade-in.show .event:nth-child(2) { transition-delay: 0.4s; }
+.fade-in.show .event:nth-child(3) { transition-delay: 0.6s; }
+
+.signature {
+    margin-top: 30px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+    color: #c6a86e;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero background zoom */
+.hero {
+    animation: zoomBg 8s ease-in-out infinite alternate;
+}
+
+@keyframes zoomBg {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 110%;
+    }
+}
+
+/* Text animation */
+.hero-content {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #c6a86e;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.map-btn:hover {
+    color: #ffd700;
+    border-bottom: 1px solid #ffd700;
+        font-size: 12px;
+        padding: 6px 10px;
+}
+
+.couple-box-bride,
+.couple-box-groom,
+.events-column {
+    width: 100%;
+    max-width: 320px;
+}

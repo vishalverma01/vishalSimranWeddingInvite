@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran Verma Weds Vishal Verma</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <p class="top-text">WE'RE GETTING MARRIED</p>
+        <h1 class="names">
+            Simran <span>&</span> Vishal
+        </h1>
+        <p class="date">25th April 2026</p>
+    </div>
+</section>
+
+<!-- Invitation Message -->
+<section class="invitation-section">
+    <div class="invitation-overlay"></div>
+
+    <div class="invitation-content">
+        <h2>Note from Bride & Groom</h2>
+        <p>
+            With immense joy and gratitude, we invite you to be a part of the
+            most special day of our lives. Your presence and blessings mean the world to us as we begin
+            this beautiful journey together.
+        </p>
+        <p class="signature">- Vishal ♥ Simran</p>
+    </div>
+</section>
+
+<!-- BRIDE & GROOM DETAILS -->
+<section class="couple-section">
+    <div class="couple-box-bride">
+        <h2>Bride</h2>
+        <h3>Simran Verma</h3>
+        <p>Sanjay Kumar Verma</p>
+        <p>Smt. Binda Verma</p>
+        <p>Baleshwar Ghat Road,<br>Ballia, UP</p>
+    </div>
+
+    <div class="couple-box-groom">
+        <h2>Groom</h2>
+        <h3>Vishal Verma</h3>
+        <p>Gupteshwar Prashad</p>
+        <p>Late Smt. Meera Devi</p>
+        <p>Gaurandi, Adalhat,<br>Mirzapur, UP</p>
+    </div>
+</section>
+
+<!-- PRE-WEDDING EVENTS -->
+<section class="events-banner">
+    <h2>Pre Wedding Events</h2>
+</section>
+
+<section class="events-grid">
+
+    <!-- BRIDE SIDE EVENTS -->
+    <div class="events-column events-column-bride">
+        <h2>Bride Side Events</h2>
+
+        <div class="event">
+            <h3>Haldi Ceremony</h3>
+            <p>21 April 2026, Tuesday</p>
+            <p>Verma Niwas, Ballia</p>
+            <a href="https://maps.app.goo.gl/3URLkUrjTAG8SNUw9"
+               target="_blank"
+               class="map-btn">
+                📍Venue
+            </a>
+        </div>
+
+        <div class="event">
+            <h3>Mehendi Ceremony</h3>
+            <p>23 April 2026, Thursday</p>
+            <p>Verma Niwas, Ballia</p>
+            <a href="https://maps.app.goo.gl/3URLkUrjTAG8SNUw9"
+               target="_blank"
+               class="map-btn">
+                📍Venue
+            </a>
+        </div>
+
+        <div class="event">
+            <h3>Sangeet</h3>
+            <p>24 April 2026, Friday</p>
+            <p>Verma Niwas, Ballia</p>
+            <a href="https://maps.app.goo.gl/3URLkUrjTAG8SNUw9"
+               target="_blank"
+               class="map-btn">
+                📍Venue
+            </a>
+        </div>
+    </div>
+
+    <!-- GROOM SIDE EVENTS -->
+    <div class="events-column events-column-groom">
+        <h2>Groom Side Events</h2>
+
+        <div class="event">
+            <h3>Haldi Ceremony</h3>
+            <p>21 April 2026, Tuesday</p>
+            <p>Adalhat, Mirzapur</p>
+            <a href="https://maps.app.goo.gl/bp29msp9GBs4qPZR9"
+               target="_blank"
+               class="map-btn">
+                📍Venue
+            </a>
+        </div>
+
+        <div class="event">
+            <h3>Mehendi Ceremony</h3>
+            <p>23 April 2026, Thursday</p>
+            <p>Adalhat, Mirzapur</p>
+            <a href="https://maps.app.goo.gl/bp29msp9GBs4qPZR9"
+               target="_blank"
+               class="map-btn">
+                📍Venue
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<!-- MAIN EVENTS -->
+<section class="main-events-banner">
+    <h2>Wedding Events</h2>
+</section>
+
+<section class="events">
+    <div class="event">
+        <h3>Tilak & Ring Ceremony</h3>
+        <p>17 April 2026, Friday</p>
+        <p>Hotel Ballians, Ballia</p>
+        <a href="https://maps.app.goo.gl/Qzhf5ViuwW3TLwXz7"
+           target="_blank"
+           class="map-btn">
+            📍Venue
+        </a>
+    </div>
+
+    <div class="event">
+        <h3>Baraat</h3>
+        <p>23 April 2026, Saturday 05:00 PM</p>
+        <p>Starting from Adalhat, Mirzapur</p>
+        <a href="https://maps.app.goo.gl/bp29msp9GBs4qPZR9"
+           target="_blank"
+           class="map-btn">
+            📍Venue
+        </a>
+    </div>
+
+    <div class="event">
+        <h3>The Wedding</h3>
+        <p>25 April 2026, Saturday</p>
+        <p>Hotel Janak Garden, Narayanpur</p>
+        <a href="https://maps.app.goo.gl/gWn8JpaJjytP5V3L7"
+           target="_blank"
+           class="map-btn">
+            📍Venue
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>Six years of chaos, now unfolding into a beautiful journey</p>
+    <p>Join us while we write new chapter in our life</p>
+</footer>
+
+</body>
+</html>
